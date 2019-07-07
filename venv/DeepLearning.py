@@ -53,3 +53,6 @@ test_image = np.expand_dims(test_image, axis = 0)
 result = classifier.predict(test_image)
 print(result)
 print(training_set.class_indices)
+
+#save the training
+classifier.save(open("Model","wb"))
