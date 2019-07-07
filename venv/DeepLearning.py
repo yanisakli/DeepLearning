@@ -1,5 +1,9 @@
 from tensorflow.python.keras.models import *
 from tensorflow.python.keras.layers import *
+from keras.preprocessing import image
+import numpy as np
+
+
 
 
 classifier = Sequential()
@@ -27,12 +31,12 @@ trainDatagen = ImageDataGenerator(rescale=1. / 255,
 
 testDatagen = ImageDataGenerator(rescale=1. / 255)
 
-training_set = trainDatagen.flow_from_directory('/Users/mac/Desktop/Convolutional_Neural_Networks/dataset/training_set',
+training_set = trainDatagen.flow_from_directory('./dataset/training_set',
                                                 target_size=(64, 64),
                                                 batch_size=32,
                                                 class_mode='binary')
 
-test_set = testDatagen.flow_from_directory('/Users/mac/Desktop/Convolutional_Neural_Networks/dataset/test_set',
+test_set = testDatagen.flow_from_directory('./dataset/test_set',
                                            target_size=(64, 64),
                                            batch_size=32,
                                            class_mode='binary')
@@ -42,3 +46,8 @@ classifier.fit_generator(training_set,
                          epochs=2,
                          validation_data=test_set,
                          max_queue_size=2000)
+
+test_image = image.load_img('./dog.jpg',target_size=(64,64))
+test_image = image.img_to_array(test_image)
+test_image = np.expand_dims(test_image, axis = 0)
+result = classifier.predict(test_image)
