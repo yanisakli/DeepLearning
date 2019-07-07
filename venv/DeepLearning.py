@@ -55,4 +55,9 @@ print(result)
 print(training_set.class_indices)
 
 #save the training
-classifier.save(open("Model","wb"))
+#classifier.save(open("Model","wb"))
+
+#test the training : load
+#Model = load_model("Model")
+
+#Model.predict(test_image)

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a497edb6-fcdf-4f86-b5ee-759b01a867d9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/venv/DeepLearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/DeepLearning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Model" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Model" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/venv/DeepLearning.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+            <state relative-caret-position="420">
+              <caret line="62" column="1" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -150,8 +151,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/DeepLearning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+        <state relative-caret-position="420">
+          <caret line="62" column="1" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
