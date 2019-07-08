@@ -42,8 +42,8 @@ test_set = testDatagen.flow_from_directory('./dataset/test_set',
                                            class_mode='binary')
 
 classifier.fit_generator(training_set,
-                         steps_per_epoch=10,
-                         epochs=2,
+                         steps_per_epoch=8000,
+                         epochs=25,
                          validation_data=test_set,
                          max_queue_size=2000)
 
@@ -55,7 +55,7 @@ print(result)
 print(training_set.class_indices)
 
 #save the training
-#classifier.save(open("Model","wb"))
+classifier.save(open("Model","wb"))
 
 #test the training : load
 #Model = load_model("Model")
