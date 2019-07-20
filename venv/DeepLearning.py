@@ -26,7 +26,7 @@ classifier.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accur
 from keras.preprocessing.image import ImageDataGenerator
 
 
-tensorboard = TensorBoard(log_dir="/tmp/weka".format(time()))
+tensorboard = TensorBoard(log_dir="./weka".format(time()))
 
 trainDatagen = ImageDataGenerator(rescale=1. / 255,
                                   shear_range=0.2,
@@ -46,10 +46,12 @@ test_set = testDatagen.flow_from_directory('./dataset/test_set',
                                            class_mode='binary')
 
 classifier.fit_generator(training_set,
-                         steps_per_epoch=5,
-                         epochs=7,
+                         steps_per_epoch=10,
+                         epochs=10,
                          callbacks=[tensorboard],
-                         validation_data=test_set)
+                         validation_data=test_set,
+                         max_queue_size=2000)
+
 
 test_image = image.load_img('./dog.jpg',target_size=(64,64))
 test_image = image.img_to_array(test_image)
@@ -59,7 +61,7 @@ print(result)
 print(training_set.class_indices)
 
 with tf.compat.v1.Session() as sess :
-    writer = tf.compat.v1.summary.FileWriter('/tmp/weka', sess.graph)
+    writer = tf.compat.v1.summary.FileWriter('./weka', sess.graph)
 
 
 now=datetime.datetime.now()
