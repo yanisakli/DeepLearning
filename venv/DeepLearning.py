@@ -2,7 +2,7 @@ from tensorflow.python.keras.models import *
 from tensorflow.python.keras.layers import *
 from keras.preprocessing import image
 import numpy as np
-
+import datetime
 
 
 
@@ -42,8 +42,8 @@ test_set = testDatagen.flow_from_directory('./dataset/test_set',
                                            class_mode='binary')
 
 classifier.fit_generator(training_set,
-                         steps_per_epoch=8000,
-                         epochs=25,
+                         steps_per_epoch=8,
+                         epochs=2,
                          validation_data=test_set,
                          max_queue_size=2000)
 
@@ -54,8 +54,11 @@ result = classifier.predict(test_image)
 print(result)
 print(training_set.class_indices)
 
+
+now=datetime.datetime.now()
+
 #save the training
-classifier.save(open("Model","wb"))
+classifier.save(open("Model"+now.isoformat(),"wb"))
 
 #test the training : load
 #Model = load_model("Model")
