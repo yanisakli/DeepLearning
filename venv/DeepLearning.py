@@ -46,8 +46,8 @@ test_set = testDatagen.flow_from_directory('./dataset/test_set',
                                            class_mode='binary')
 
 classifier.fit_generator(training_set,
-                         steps_per_epoch=10,
-                         epochs=10,
+                         steps_per_epoch=8000,
+                         epochs=25,
                          callbacks=[tensorboard],
                          validation_data=test_set,
                          max_queue_size=2000)
@@ -67,7 +67,7 @@ with tf.compat.v1.Session() as sess :
 now=datetime.datetime.now()
 
 #save the training
-#classifier.save(open("Model"+now.isoformat(),"wb"))
+classifier.save(open("Model"+now.isoformat(),"wb"))
 
 #test the training : load
 #model = load_model("Model")
