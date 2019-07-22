@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a497edb6-fcdf-4f86-b5ee-759b01a867d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/.ipynb_checkpoints/jupyter_python-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/venv/.ipynb_checkpoints/jupyter_python-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/DeepLearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/DeepLearning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Model2019-07-21T17:14:26.529760" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/jupyter_python.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/venv/jupyter_python.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/weka/events.out.tfevents.1563648491.MBP-de-Mac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/weka/events.out.tfevents.1563649171.MBP-de-Mac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/weka/train/events.out.tfevents.1563648426.MBP-de-Mac.83117.152.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/weka/train/events.out.tfevents.1563649103.MBP-de-Mac.83188.152.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/weka/validation/events.out.tfevents.1563648436.MBP-de-Mac.83117.541.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/weka/validation/events.out.tfevents.1563649113.MBP-de-Mac.83188.541.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/logs/1563640594.139679/plugins/profile/2019-07-20_18-36-36/local.trace" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/logs/1563640594.139679/train/events.out.tfevents.1563640594.MBP-de-Mac.78671.16330.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/logs/1563640594.139679/validation/events.out.tfevents.1563640594.MBP-de-Mac.78671.16338.v2" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/venv/DeepLearning.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="58" column="39" lean-forward="true" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+            <state relative-caret-position="1050">
+              <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -61,6 +59,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -77,7 +76,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -133,7 +131,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20648344" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -146,7 +144,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="10" visible="true" weight="0.3" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="10" visible="true" weight="0.20481928" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -156,10 +154,13 @@
     <entry file="file://$PROJECT_DIR$/venv/pyvenv.cfg">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/chat.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/DeepLearning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="58" column="39" lean-forward="true" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+        <state relative-caret-position="1050">
+          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>

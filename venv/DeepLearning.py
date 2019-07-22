@@ -26,7 +26,7 @@ classifier.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accur
 from keras.preprocessing.image import ImageDataGenerator
 
 
-tensorboard = TensorBoard(log_dir="./weka".format(time()))
+#tensorboard = TensorBoard(log_dir="./weka".format(time()))
 
 trainDatagen = ImageDataGenerator(rescale=1. / 255,
                                   shear_range=0.2,
@@ -46,30 +46,35 @@ test_set = testDatagen.flow_from_directory('./dataset/test_set',
                                            class_mode='binary')
 
 classifier.fit_generator(training_set,
-                         steps_per_epoch=8000,
-                         epochs=25,
-                         callbacks=[tensorboard],
+                         steps_per_epoch=8,
+                         epochs=2,
+                         #callbacks=[tensorboard],
                          validation_data=test_set,
                          max_queue_size=2000)
 
 
-test_image = image.load_img('./dog.jpg',target_size=(64,64))
+test_image = image.load_img('chat1.png',target_size=(64,64))
 test_image = image.img_to_array(test_image)
 test_image = np.expand_dims(test_image, axis = 0)
 result = classifier.predict(test_image)
 print(result)
 print(training_set.class_indices)
 
-with tf.compat.v1.Session() as sess :
-    writer = tf.compat.v1.summary.FileWriter('./weka', sess.graph)
+#with tf.compat.v1.Session() as sess :
+ #   writer = tf.compat.v1.summary.FileWriter('./weka', sess.graph)
 
 
 now=datetime.datetime.now()
 
 #save the training
-classifier.save(open("Model"+now.isoformat(),"wb"))
-
+#classifier.save(open("Model"+now.isoformat(),"wb"))
+#classifier.save('/Users/mac/Desktop/DeepLearning/DeepLearning/venv/project.h5')
 #test the training : load
-#model = load_model("Model")
+img = image.load_img('chat2.png',target_size=(64,64))
+img = image.img_to_array(img)
+img = np.expand_dims(img, axis = 0)
 
-#model.predict(test_image)
+mdl = load_model("Model1")
+
+print(mdl.predict(img))
+print(training_set.class_indices)
